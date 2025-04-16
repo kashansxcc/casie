@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Animation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 2000px;
+            background-color: #f5f5f5;
+        }
+
+        .divs{
+            height: 100px;
+            width: 100vw;
+            background-color: red;
+            margin: 50vw;
+            opacity: 0;
+            transition: all 1s ease;
+        }
+        .divs.visible {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+<p>loremm10000</p>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    
+    <script>
+       const observer = new IntersectionObserver((entries,observer)=>{
+        entries.forEach(entry =>{
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible")
+                observer.unobserve(entry.target)
+            }
+        }),{threshold:0.5}
+       })
+        const divv = document.querySelectorAll(".divs")
+        divv.forEach(div=>{observer.observe(div)})
+    </script>
+
+</body>
+
+</html>

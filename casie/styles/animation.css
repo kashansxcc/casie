@@ -1,0 +1,74 @@
+@keyframes lighta {
+    0%{
+        opacity: 0;
+    }
+    16%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.3;
+    }
+    23%{
+        opacity: 0.3;
+    }
+    30%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: 0.4;
+    }
+    57%{
+        opacity: 0.4;
+    }
+    65%{
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.5;
+    }
+}
+@keyframes counting {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, -69%);
+    }
+}
+@keyframes anime {
+    0% {
+        width: 11.3vw;
+    }
+
+    60% {
+        width: 11.3vw;
+    }
+
+    100% {
+        width: 0vw;
+    }
+}
+@keyframes feeds {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    60% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(0px, -49%);
+    }
+}

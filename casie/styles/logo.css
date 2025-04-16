@@ -1,0 +1,125 @@
+:root {
+    --color-mint: #6FDCBF;
+    --color-highlight: #AF91DB;
+}
+.nighty.night{
+    stroke:#B1B1D8;
+}
+.nighty2.night{
+    stroke: #851368;
+}
+
+.Site-head__site-name {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo {
+    width: 130px;
+    width: 10vw ;
+    position: absolute;
+    top: calc(0.4vw);
+    z-index: 20;
+    height: auto;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Animation styles */
+@keyframes drawPath {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+#clips {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 1s;
+}
+
+#strokes path {
+    position: relative;
+    z-index: 10;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawPath 1s ease 2s forwards;
+}
+
+#strokes2 path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: drawPath 2s ease 2s forwards;
+}
+
+/* Stagger the animations for each path */
+#strokes .cPath { animation-delay: 0.1s; }
+#strokes .a1Path { animation-delay: 0.3s; }
+#strokes .a2Path { animation-delay: 0.5s; }
+#strokes .s1Path { animation-delay: 0.7s; }
+#strokes .s2Path { animation-delay: 0.9s; }
+#strokes .s3Path { animation-delay: 1.1s; }
+#strokes .s4Path { animation-delay: 1.3s; }
+#strokes .iPath { animation-delay: 2.10s; }
+#strokes .ePath { animation-delay: 2.30s; }
+
+/* Strokes2 animations with small delay after strokes */
+#strokes2 .cPath { animation-delay: 0.15s; }
+#strokes2 .a1Path { animation-delay: 0.35s; }
+#strokes2 .a2Path { animation-delay: 0.55s; }
+#strokes2 .s1Path { animation-delay: 0.75s; }
+#strokes2 .s2Path { animation-delay: 0.95s; }
+#strokes2 .s3Path { animation-delay: 1.15s; }
+#strokes2 .s4Path { animation-delay: 1.35s; }
+#strokes2 .iPath { animation-delay: 2.10s; }
+#strokes2 .ePath { animation-delay: 2.30s; }
+
+#dot{
+    padding: 10px;
+}
+.dot-group{
+    opacity: 0;
+    animation: dot 1s ease forwards;
+    animation-delay: 1.35s; /* Match the timing of the last stroke (ePath) */
+}
+@keyframes dot {
+    0% { 
+        transform: translateY(21px); 
+        opacity: 0; 
+    }
+    10%{
+        opacity: 1;
+    }
+    25% { 
+        translate: translateY(21px);
+        opacity: 1; /* Sudden appearance */
+    }
+    50% { 
+        transform: translateY(0px); 
+        opacity: 1;
+    }
+    75%{
+        transform: translateY(21px);
+    }
+    100% { 
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

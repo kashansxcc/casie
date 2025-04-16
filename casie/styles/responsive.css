@@ -1,0 +1,411 @@
+@media screen and (max-width:1400px) {
+    .page1 {
+        max-height: 80vh;
+    }
+
+    .hamburg {
+        display: block;
+        position: fixed;
+        z-index: 41;
+    }
+
+    .navs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        position: fixed;
+        z-index: 14;
+        right: -100%;
+        transition: all 1s ease-in-out;
+        top: calc(5% + 10vw);
+        width: 40vw;
+    }
+
+    .header {
+        position: fixed;
+        z-index: 41;
+    }
+
+    .lamp img {
+        width: max(25vw, 100px);
+    }
+
+    .light img {
+        width: 26.7vw;
+    }
+
+    .light {
+        top: 12.0vw;
+        right: -47.5%;
+    }
+
+    .ttt {
+        font-size: 2vw !important;
+    }
+
+    .writing {
+        padding: 2.4vw 16.2vw;
+    }
+
+    .speaking {
+        padding: 2.4vw 14.5vw;
+    }
+
+    .workshop {
+        padding: 2.4vw 14.3vw;
+    }
+
+    .playing {
+        padding: 2.4vw 15.2vw;
+    }
+
+    .writing:hover {
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+
+    .speaking:hover {
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+
+    .workshop:hover {
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+
+    .playing:hover {
+        background-color: rgba(255, 255, 255, 0.712);
+    }
+
+    .toggle {
+        position: absolute;
+        top: 10%;
+        right: 10%;
+    }
+
+    .shadow {
+        position: fixed;
+        top: -4px;
+        width: 104%;
+        height: 7vw;
+        right: -1%;
+        z-index: 40;
+        backdrop-filter: blur(3px);
+        transition: all 0.5s ease-in-out;
+        opacity: 0;
+        background-color: rgba(255, 255, 255, 0.507);
+    }
+
+    .shadow.show {
+        backdrop-filter: blur(3px);
+        transition: all 1s ease-in-out;
+        opacity: 1;
+    }
+
+    .shadow.scroll {
+        backdrop-filter: blur(3px);
+        /* Blur intensity */
+        /* Semi-transparent */
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .computer {
+        top: 25vw;
+        /* + 6 */
+    }
+
+    .lamp img {
+        width: 32vw;
+    }
+
+    .lamp {
+        right: -50%;
+    }
+
+    .vscode {
+        top: 26.9vw;
+    }
+
+    .counting {
+        top: 27.4vw;
+    }
+
+    .code {
+        top: 26.6vw;
+    }
+
+    .anime {
+        top: 27.2vw;
+    }
+
+    .feed {
+        top: 27.3vw;
+    }
+
+    .text h1 {
+        top: calc(17vw + 7%);
+    }
+
+    .shelf img {
+        top: calc(158% + 6vw);
+    }
+
+    .text h3 {
+        top: calc(6% + 15vw);
+    }
+}
+
+@media screen and (max-width:860px) {
+    .computer {
+        display: none;
+    }
+
+    .lamp img {
+        display: none;
+    }
+
+    .lamp {
+        display: none;
+    }
+
+    .vscode {
+        display: none;
+    }
+
+    .counting {
+        display: none;
+    }
+
+    .code {
+        display: none;
+    }
+
+    .anime {
+        display: none;
+    }
+
+    .feed {
+        display: none;
+    }
+
+    .shelf img {
+        display: none;
+    }
+
+    .text h1 {
+        position: relative;
+        top: 36vh;
+        left: 0;
+        line-height: 1.2;
+        font-weight: 700;
+        font-size:10vw;
+        width: calc(100vw - 4%);
+    }
+
+    .text h3 {
+        position: relative;
+        font-size: 1.5rem;
+        left: 0%;
+        top: 32vh;
+    }
+
+    .left {
+        width: 0;
+        padding: 0;
+    }
+
+    .right {
+        width: 100vw;
+        padding: 0 3vw;
+        background-color: #F6F4F6;
+        position: relative;
+    }
+
+    .page1 {
+        min-height: 100vh;
+    }
+
+    .logo {
+        width: 30vw;
+        margin: 4vw 6vw;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3vh 27vh 27vh 27vh;
+        gap: 10vw;
+        padding: 0 6vw;
+    }
+
+    .write {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #writing {
+        font-size: 7vw;
+    }
+
+    .box1 {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box2 {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        height: 100%;
+    }
+
+    .box3 {
+        grid-column: 1;
+        grid-row: 4;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .shadow {
+        height: 20vw;
+    }
+
+    .hamburg {
+        height: 4vw;
+        top: 9vw;
+        object-fit: contain;
+    }
+
+    #hamburg {
+        width: 60vw;
+    }
+
+    #hamburg.show {
+        transform: translate(70%);
+    }
+
+    .ttt {
+        font-size: 4vw !important;
+    }
+
+    .navs.show {
+        right: 18.1%;
+        justify-content: center;
+    }
+
+    .writing {
+        padding: 2.4vw 21vw;
+    }
+    .speaking {
+        padding: 2.4vw 21vw;
+    }
+    .workshop {
+        padding: 2.4vw 21vw;
+    }
+    .playing {
+        padding: 2.4vw 21vw;
+    }
+    .toggle{
+        position: absolute;
+        top: 110%;
+        right: 10%;
+        width: 9vw;
+        height: 5vw;
+        z-index: 200;
+    }
+    .circle{
+        height: 4vw;
+        width: 4vw;
+    }
+    .circle.night{
+        transform: translate(18px, 0px);
+    }
+    .text span {
+        -webkit-text-stroke: 0.6px #000000;
+    }
+    .text span.night {
+        -webkit-text-stroke: 0.6px #ffffff;
+    }
+}
+
+@media screen and (min-height:1200px) {
+    .page1{
+        max-height: 80vh;
+    }
+}
+@media screen and (min-height:1300px) {
+    .page1{
+        max-height: 80vh;
+    }
+    .computer img {
+        width: 45vw;
+    }
+    
+
+    .lamp img {
+        width: 40vw;
+    }
+
+    .lamp {
+        right: -63%;
+    }
+
+    .vscode{
+        height: 14.8vw;
+        top: 27.2vw;
+        width: 19vw;
+        right: -222%; 
+    }
+    .vscode img {
+        width:20.61vw  ;
+    }
+    .counting{
+        height: 14vw;
+        right: -82%;
+
+    }
+    .counting img{
+        width: 1.5vw;
+    }
+    .code img{
+        width: 18.4vw;
+        height: 546px;
+    }
+    .code{
+        top: 27.2vw;
+        right: -214%;
+        width: 15.5vw;
+        height: 14.5vw;
+        overflow: hidden;
+        animation-direction: forwards;
+    }
+    @keyframes counting {
+        0% {
+            transform: translate(0, 0);
+        }
+    
+        30% {
+            transform: translate(0, 0);
+        }
+    
+        100% {
+            transform: translate(0px, -70%);
+        }
+    }
+    .anime{
+        top: 27.2vw;
+        width: 16.5vw;
+        height: 15vw;
+        animation: anime2 3s cubic-bezier(0.69, 0.02, 0.38, 0.96) 1 4s forwards;
+    }
+    @keyframes anime2 {
+        0% {
+            width: 16.5vw;
+        }
+        100% {
+            width: 0vw;
+        }
+    }
+}

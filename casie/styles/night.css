@@ -1,0 +1,56 @@
+.left.night{
+    background-color: #29272A;
+}
+.right.night{
+    background-color: #774069;
+}
+.light.night{
+    opacity: 0.5;
+    animation: lighta 2s ease 1;
+}
+.circle.night{
+    transform: translate(1.45vw , 0px) rotate(180deg);
+    background-image: url("png/moon.png");
+    transition: all 0.1s cubic-bezier(0.6, -0.02, 0.43, 0.95);
+}
+.toggle.night {
+    background: radial-gradient(#eeeeee, #6E6C7D);
+}
+.text h1.night {
+    color: white;
+}
+
+.text h3.night {
+    color: white;
+}
+.span.night {
+    color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke: 1.7px white;
+}
+.ttt.night{
+    color: white;
+}
+.page2.night {
+    background-color: #4C3A69;
+}
+#writing.night{  
+    color: white;
+}
+.shadow.night{
+    background-color: black;
+}
+.boxes.night{
+    background-color: #4C3A69;
+}
+.border_top.night{
+    border: 0.13vw solid rgb(255, 255, 255);
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+}
+.border_bottom.night{
+    border: 0.13vw solid rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+}
+.circles.night{
+    background-color:#f8f8f8;
+}
